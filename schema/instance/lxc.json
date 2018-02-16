@@ -1,0 +1,23 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema",
+    "description": "petitVDC Instance Template: instance/lxc",
+    "type":"object",
+    "required": [
+        "type"
+    ],
+    "properties": {
+        "type": {
+            "enum": [
+                "instance/lxc"
+            ]
+        },
+        "vcpu": {
+            "type": "integer",
+            "default": 1
+        },
+        "memory_gb": {
+            "type": "integer",
+            "default": 1
+        }
+    }
+}
