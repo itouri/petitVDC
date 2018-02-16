@@ -23,3 +23,18 @@ OpenVDC は scheduler に包含されている
 クライアントツール
 OpenStack では nova には存在しない
 OpenVDC の cmd と同じ
+
+---
+
+### model
+DB(MySQL)とのモデル とその handler
+
+---
+
+### template
+OpenVDC の templates と同じ
+
+---
+
+### schema
+OpenVDC の schema と同じ
