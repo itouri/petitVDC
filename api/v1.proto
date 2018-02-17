@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+package api;
+
+import "../model/model.proto";
+
+service Instance {
+    rpc Create (CreateRequest) returns (CreateReply){}
+    rpc Run (CreateRequest) returns (RunReply){}
+    rpc Destroy (DestroyRequest) returns (DestroyReply){}
+    rpc Console (ConsoleRequest) returns (ConsoleReply){}
+    rpc List (InstanceListRequest) returns (InstanceListReply){}
+}
+
+message CreateRequest {
+    reserved 1; // ???
+    model.Template template = 2;
+    // bool auto_recovery = 3;
+}
+
+message CreateReply {
+    string instance_id = 1; // [json_name="instance_id"];
+}
