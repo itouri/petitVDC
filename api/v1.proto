@@ -6,10 +6,10 @@ import "../model/template.proto";
 
 service Instance {
     rpc Create (CreateRequest) returns (CreateReply){}
-    rpc Run (CreateRequest) returns (RunReply){}
-    rpc Destroy (DestroyRequest) returns (DestroyReply){}
-    rpc Console (ConsoleRequest) returns (ConsoleReply){}
-    rpc List (InstanceListRequest) returns (InstanceListReply){}
+    //rpc Run (CreateRequest) returns (RunReply){}
+    //rpc Destroy (DestroyRequest) returns (DestroyReply){}
+    //rpc Console (ConsoleRequest) returns (ConsoleReply){}
+    //rpc List (InstanceListRequest) returns (InstanceListReply){}
 }
 
 message CreateRequest {
