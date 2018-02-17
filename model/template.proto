@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package model;
+
+message ResourceTemplate {
+    oneof Item {
+        InstanceTemplate instance = 100; // この数字はどうやって決めてる?
+        NoneTemplate none = 101;
+    }
+}
+
+message NoneTemplate {}
+
+message InstanceTemplate {
+    oneof Item {
+        LxcTemplate lxc = 201;
+    }
+}
