@@ -1,8 +1,9 @@
 syntax = "proto3";
 
-package api;
+package instance;
 
-import "../model/template.proto";
+//import "template.proto";
+option go_package = "/";
 
 service Instance {
     rpc Create (CreateRequest) returns (CreateReply){}
@@ -14,7 +15,7 @@ service Instance {
 
 message CreateRequest {
     reserved 1; // ???
-    model.InstanceTemplate instance_template = 2;
+    //model.InstanceTemplate instance_template = 2;
     // bool auto_recovery = 3;
 }
 

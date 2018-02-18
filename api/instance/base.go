@@ -1,3 +1,5 @@
 package instance
 
-type InstanceAPI struct{}
+type InstanceAPI struct {
+	// api *APIServer
+}
