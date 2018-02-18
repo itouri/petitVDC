@@ -1,9 +1,9 @@
 syntax = "proto3";
 
-package instance;
+package api;
 
 import "template.proto";
-option go_package = "github.com/itouri/petitVDC/api/instance";
+option go_package = "github.com/itouri/petitVDC/api";
 
 service Instance {
     rpc Create (CreateRequest) returns (CreateReply){}

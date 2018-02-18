@@ -1,4 +1,4 @@
-package instance
+package api
 
 import "golang.org/x/net/context"
 
