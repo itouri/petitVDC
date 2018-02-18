@@ -1,6 +1,7 @@
 syntax = "proto3";
 
 package model;
+option go_package = "github.com/itouri/petitVDC/model";
 
 message ResourceTemplate {
     oneof Item {
@@ -15,4 +16,9 @@ message InstanceTemplate {
     oneof Item {
         LxcTemplate lxc = 201;
     }
+}
+
+message LxcTemplate {
+    int32 vcpu = 1;
+    int32 memory_gb = 2 [json_name="memory_gb"];
 }
